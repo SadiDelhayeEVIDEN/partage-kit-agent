@@ -1,0 +1,19 @@
+/* Charte Notaire 1900 : variables à utiliser telles quelles.
+   Copier ce fichier dans le projet sous le nom charte.css et le charger en premier. */
+:root {
+  --charte-fond: #F4ECD8;
+  --charte-surface: #FBF6E9;
+  --charte-texte: #2B1D0E;
+  --charte-texte-doux: #6B5A45;
+  --charte-accent: #7A1F2B;
+  --charte-sur-accent: #FBF6E9;
+  --charte-accent-2: #8C6D1F;
+  --charte-accent-3: #8C6D1F;
+  --charte-bord: #2B1D0E;
+  --charte-danger: #9B1C1C;
+  --charte-police-titres: Georgia, "Times New Roman", serif;
+  --charte-police-texte: Georgia, "Times New Roman", serif;
+  --charte-rayon: 0px;
+  --charte-epaisseur-bord: 1px;
+  --charte-ombre: none;
+}

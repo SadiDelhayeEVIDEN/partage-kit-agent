@@ -1,0 +1,19 @@
+/* Charte Guichet 27-B : variables à utiliser telles quelles.
+   Copier ce fichier dans le projet sous le nom charte.css et le charger en premier. */
+:root {
+  --charte-fond: #ECECEC;
+  --charte-surface: #FFFFFF;
+  --charte-texte: #1C1C1C;
+  --charte-texte-doux: #505050;
+  --charte-accent: #1A3A8F;
+  --charte-sur-accent: #FFFFFF;
+  --charte-accent-2: #B00020;
+  --charte-accent-3: #B00020;
+  --charte-bord: #7A7A7A;
+  --charte-danger: #B00020;
+  --charte-police-titres: Arial, Helvetica, sans-serif;
+  --charte-police-texte: "Courier New", Courier, monospace;
+  --charte-rayon: 2px;
+  --charte-epaisseur-bord: 1px;
+  --charte-ombre: none;
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash(npm test *)",
+      "PowerShell(npm test *)",
+      "Bash(npm run lint *)",
+      "PowerShell(npm run lint *)",
+      "Bash(npm run build)",
+      "PowerShell(npm run build)",
+      "Bash(git add *)",
+      "PowerShell(git add *)",
+      "Bash(git commit *)",
+      "PowerShell(git commit *)",
+      "WebFetch(domain:developer.mozilla.org)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "PowerShell(git push *)",
+      "Bash(npm install *)",
+      "PowerShell(npm install *)",
+      "Edit(./package.json)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Edit(./.env)",
+      "Read(./secrets/**)",
+      "Read(./config/credentials.*)",
+      "Bash(git push --force *)",
+      "PowerShell(git push --force *)",
+      "Bash(rm -rf *)",
+      "PowerShell(Remove-Item -Recurse *)",
+      "Bash(curl *)",
+      "PowerShell(Invoke-WebRequest *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "Add-Content -Encoding utf8 -Path \"$env:CLAUDE_PROJECT_DIR/.claude/journal-commandes.log\" -Value \"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') $([Console]::In.ReadToEnd().Trim())\""
+          }
+        ]
+      },
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "Add-Content -Encoding utf8 -Path \"$env:CLAUDE_PROJECT_DIR/.claude/journal-skills.log\" -Value \"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') $([Console]::In.ReadToEnd().Trim())\""
+          }
+        ]
+      }
+    ]
+  }
+}

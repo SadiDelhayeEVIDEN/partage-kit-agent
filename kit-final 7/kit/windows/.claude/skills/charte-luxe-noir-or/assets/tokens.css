@@ -1,0 +1,19 @@
+/* Charte Luxe Noir & Or : variables à utiliser telles quelles.
+   Copier ce fichier dans le projet sous le nom charte.css et le charger en premier. */
+:root {
+  --charte-fond: #0A0A0A;
+  --charte-surface: #141414;
+  --charte-texte: #EDE6D6;
+  --charte-texte-doux: #A89F8D;
+  --charte-accent: #C9A227;
+  --charte-sur-accent: #0A0A0A;
+  --charte-accent-2: #EDE6D6;
+  --charte-accent-3: #EDE6D6;
+  --charte-bord: #C9A227;
+  --charte-danger: #E07A5F;
+  --charte-police-titres: Georgia, "Times New Roman", serif;
+  --charte-police-texte: Georgia, "Times New Roman", serif;
+  --charte-rayon: 0px;
+  --charte-epaisseur-bord: 1px;
+  --charte-ombre: none;
+}

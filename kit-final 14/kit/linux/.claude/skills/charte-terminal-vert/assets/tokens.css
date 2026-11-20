@@ -1,0 +1,19 @@
+/* Charte Terminal vert : variables à utiliser telles quelles.
+   Copier ce fichier dans le projet sous le nom charte.css et le charger en premier. */
+:root {
+  --charte-fond: #020B02;
+  --charte-surface: #041404;
+  --charte-texte: #33FF66;
+  --charte-texte-doux: #1FAF45;
+  --charte-accent: #33FF66;
+  --charte-sur-accent: #020B02;
+  --charte-accent-2: #B6FF00;
+  --charte-accent-3: #B6FF00;
+  --charte-bord: #33FF66;
+  --charte-danger: #FF5555;
+  --charte-police-titres: "Consolas", "Courier New", monospace;
+  --charte-police-texte: "Consolas", "Courier New", monospace;
+  --charte-rayon: 0px;
+  --charte-epaisseur-bord: 1px;
+  --charte-ombre: none;
+}

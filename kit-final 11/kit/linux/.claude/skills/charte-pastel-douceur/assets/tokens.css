@@ -1,0 +1,19 @@
+/* Charte Pastel Douceur : variables à utiliser telles quelles.
+   Copier ce fichier dans le projet sous le nom charte.css et le charger en premier. */
+:root {
+  --charte-fond: #FFF0F5;
+  --charte-surface: #FFFFFF;
+  --charte-texte: #4A3B52;
+  --charte-texte-doux: #75647F;
+  --charte-accent: #F7B6D2;
+  --charte-sur-accent: #4A3B52;
+  --charte-accent-2: #BDEBD3;
+  --charte-accent-3: #E3D4F5;
+  --charte-bord: #E3D4F5;
+  --charte-danger: #B3261E;
+  --charte-police-titres: "Trebuchet MS", Verdana, sans-serif;
+  --charte-police-texte: "Trebuchet MS", Verdana, sans-serif;
+  --charte-rayon: 20px;
+  --charte-epaisseur-bord: 2px;
+  --charte-ombre: 0 6px 18px rgba(177, 94, 134, 0.18);
+}

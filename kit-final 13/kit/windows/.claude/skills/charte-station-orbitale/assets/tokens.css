@@ -1,0 +1,19 @@
+/* Charte Station orbitale : variables à utiliser telles quelles.
+   Copier ce fichier dans le projet sous le nom charte.css et le charger en premier. */
+:root {
+  --charte-fond: #0B1020;
+  --charte-surface: #141B33;
+  --charte-texte: #E8EEF9;
+  --charte-texte-doux: #9FB0CC;
+  --charte-accent: #FF6A00;
+  --charte-sur-accent: #0B1020;
+  --charte-accent-2: #7FDBFF;
+  --charte-accent-3: #7FDBFF;
+  --charte-bord: #2A3760;
+  --charte-danger: #FF5C5C;
+  --charte-police-titres: "Consolas", "Courier New", monospace;
+  --charte-police-texte: "Segoe UI", Arial, sans-serif;
+  --charte-rayon: 6px;
+  --charte-epaisseur-bord: 1px;
+  --charte-ombre: none;
+}
