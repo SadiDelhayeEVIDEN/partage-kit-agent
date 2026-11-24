@@ -1,0 +1,32 @@
+// OpenCode 1 (paquet « opencode-ai ») : règles de permission d'exemple, à poser à la racine du projet.
+// Les mêmes que dans le settings.json de Claude Code. Adaptez-les : à l'exercice 2, ajoutez en « deny »
+// les fichiers que le scan a trouvés ; à l'exercice 3, ajoutez « "*tests/*": "deny" » sous « edit ».
+// Pour chaque outil, la dernière règle qui correspond l'emporte : la règle générale "*" d'abord.
+// Les motifs commencent par * parce que l'agent donne souvent un chemin complet (/chemin/du/projet/.env).
+// OpenCode 1 refuse déjà la lecture des .env par défaut : la règle le rend visible.
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*secrets/*": "deny",
+      "*config/credentials.*": "deny"
+    },
+    "edit": {
+      "*": "allow",
+      "*.env": "deny"
+    },
+    "bash": {
+      "*": "ask",
+      "npm test*": "allow",
+      "npm run lint*": "allow",
+      "npm run build": "allow",
+      "git add *": "allow",
+      "git commit *": "allow",
+      "git push --force*": "deny",
+      "rm -rf *": "deny",
+      "curl *": "deny"
+    }
+  }
+}
